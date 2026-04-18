@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Charleston's premier bachelorette party entertainer. Book a professional male entertainer for an unforgettable bachelorette night in Charleston, SC. Serving Mount Pleasant, Folly Beach, Isle of Palms & beyond."/>
+  <title>Bachelorette Party Entertainer Charleston SC | Michael After Dark</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --pink: #d63f6e;
+      --pink-light: #f06292;
+      --dark: #1a1a2e;
+      --text: #333;
+      --muted: #666;
+      --light-bg: #fafafa;
+      --border: #e8e8e8;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      color: var(--text);
+      background: #fff;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 0;
+    }
+
+    .navbar-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      color: var(--dark) !important;
+      font-weight: 700;
+    }
+
+    .nav-link {
+      color: var(--muted) !important;
+      font-size: 0.88rem;
+    }
+
+    .btn-book {
+      background: var(--pink);
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 0.5rem 1.4rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .btn-book:hover {
+      background: var(--pink-light);
+      color: #fff;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #fff5f7 0%, #fff 60%);
+      padding: 5rem 0 4rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      font-weight: 700;
+      color: var(--dark);
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero h1 span {
+      color: var(--pink);
+    }
+
+    .hero p {
+      font-size: 1.05rem;
+      color: var(--muted);
+      line-height: 1.75;
+      max-width: 500px;
+      margin-bottom: 2rem;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: #fff0f3;
+      color: var(--pink);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.35rem 1rem;
+      border-radius: 20px;
+      margin-bottom: 1.25rem;
+    }
+
+    /* STATS */
+    .stats {
+      background: var(--dark);
+      padding: 2.5rem 0;
+    }
+
+    .stat-item {
+      text-align: center;
+      color: #fff;
+    }
+
+    .stat-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--pink-light);
+      display: block;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.6);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    /* ABOUT */
+    .about {
+      padding: 5rem 0;
+      background: #fff;
+    }
+
+    .section-tag {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--pink);
+      margin-bottom: 0.75rem;
+    }
+
+    .about h2 {
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      color: var(--dark);
+      margin-bottom: 1.25rem;
+    }
+
+    .about p {
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+      font-size: 0.97rem;
+    }
+
+    /* FEATURES */
+    .features {
+      background: var(--light-bg);
+      padding: 5rem 0;
+    }
+
+    .feature-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 2rem 1.75rem;
+      height: 100%;
+      transition: box-shadow 0.25s ease;
+    }
+
+    .feature-card:hover {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+
+    .feature-icon {
+      width: 44px;
+      height: 44px;
+      background: #fff0f3;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .feature-card h3 {
+      font-size: 1.15rem;
+      color: var(--dark);
+      margin-bottom: 0.6rem;
+    }
+
+    .feature-card p {
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* LOCATIONS */
+    .locations {
+      padding: 5rem 0;
+      background: #fff;
+    }
+
+    .location-tag {
+      display: inline-block;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 0.4rem 1.1rem;
+      font-size: 0.83rem;
+      color: var(--muted);
+      margin: 0.25rem;
+      transition: all 0.2s;
+    }
+
+    .location-tag:hover {
+      border-color: var(--pink);
+      color: var(--pink);
+    }
+
+    /* CTA */
+    .cta-section {
+      background: linear-gradient(135deg, #d63f6e 0%, #b5294f 100%);
+      padding: 5rem 0;
+      text-align: center;
+      color: #fff;
+    }
+
+    .cta-section h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .cta-section p {
+      color: rgba(255,255,255,0.8);
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn-white {
+      background: #fff;
+      color: var(--pink);
+      border: none;
+      border-radius: 4px;
+      padding: 0.85rem 2.5rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      transition: opacity 0.2s;
+    }
+
+    .btn-white:hover {
+      opacity: 0.9;
+      color: var(--pink);
+    }
+
+    .price-note {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.65);
+      margin-top: 1rem;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark);
+      padding: 2rem 0;
+      text-align: center;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.4);
+    }
+
+    footer a {
+      color: rgba(255,255,255,0.6);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Michael After Dark</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto align-items-center gap-3">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#locations">Locations</a></li>
+          <li class="nav-item"><a href="#book" class="btn-book">Book Now</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <div class="hero-badge">Charleston, SC · Bachelorette Entertainment</div>
+          <h1>Charleston's Premier<br/><span>Bachelorette Party</span><br/>Entertainer</h1>
+          <p>Give the bride-to-be the sendoff she deserves. Professional, high-energy male entertainment across the Lowcountry — tailored to your group every time.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#book" class="btn-book" style="padding:0.75rem 2rem; font-size:0.9rem;">Book Your Date</a>
+            <a href="#about" class="btn btn-outline-secondary" style="border-radius:4px; font-size:0.9rem;">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="container">
+      <div class="row g-4 justify-content-center">
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <span class="stat-number">5★</span>
+            <span class="stat-label">Client Rated</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <span class="stat-number">200+</span>
+            <span class="stat-label">Events Completed</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <span class="stat-number">$200</span>
+            <span class="stat-label">Starting Rate</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <span class="stat-number">8+</span>
+            <span class="stat-label">Areas Served</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+          <p class="section-tag">About</p>
+          <h2>Charleston's Most Requested Bachelorette Party Entertainer</h2>
+          <p>When Charleston brides and their squads go searching for the best bachelorette party entertainment in the Lowcountry, one name keeps coming up. With magnetic stage presence, natural charm, and a performance style built around making the bride feel like the star of the night, this is the go-to male entertainer for bachelorette celebrations across Charleston SC.</p>
+          <p>From intimate hotel suite performances in downtown Charleston to beach house blowouts on Isle of Palms, the entertainment comes to you — wherever the night takes place.</p>
+          <a href="#book" class="btn-book mt-2" style="display:inline-block; padding:0.75rem 2rem;">Book Now</a>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-4" style="background:#fafafa; border:1px solid var(--border); border-radius:8px;">
+            <h3 style="font-size:1.3rem; color:var(--dark); margin-bottom:1.25rem;">What's Included</h3>
+            <ul class="list-unstyled mb-0" style="font-size:0.92rem; color:var(--muted); line-height:2;">
+              <li>✓ &nbsp;On-time, professional arrival</li>
+              <li>✓ &nbsp;Customized performance for your group</li>
+              <li>✓ &nbsp;Bride-focused spotlight moments</li>
+              <li>✓ &nbsp;Interactive crowd entertainment</li>
+              <li>✓ &nbsp;Full discretion guaranteed</li>
+              <li>✓ &nbsp;Available 7 days a week</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="services">
+    <div class="container">
+      <div class="text-center mb-5">
+        <p class="section-tag">Why Book With Us</p>
+        <h2 style="font-size:clamp(1.7rem,3vw,2.4rem); color:var(--dark);">What Every Bachelorette Group Deserves</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3>Fully Professional</h3>
+            <p>On time, well-presented, and easy to communicate with. Zero stress for the organizer — just a smooth, exciting night.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card">
+            <div class="feature-icon">✨</div>
+            <h3>Tailored to Your Group</h3>
+            <p>High-energy or fun and tasteful — the performance is adjusted to match your bachelorette crew's vibe perfectly.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card">
+            <div class="feature-icon">👑</div>
+            <h3>Bride-Focused</h3>
+            <p>Every performance puts the bride-to-be front and center. She'll feel celebrated, special, and completely unforgettable.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3>100% Discreet</h3>
+            <p>Your privacy is protected from the first inquiry to the final performance. What happens at the party stays there.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATIONS -->
+  <section class="locations" id="locations">
+    <div class="container text-center">
+      <p class="section-tag">Service Area</p>
+      <h2 style="font-size:clamp(1.7rem,3vw,2.4rem); color:var(--dark); margin-bottom:0.75rem;">Serving All of Greater Charleston</h2>
+      <p style="color:var(--muted); margin-bottom:2rem; font-size:0.95rem;">Available wherever your bachelorette celebration is happening across the Lowcountry.</p>
+      <div>
+        <span class="location-tag">Downtown Charleston</span>
+        <span class="location-tag">Mount Pleasant</span>
+        <span class="location-tag">Folly Beach</span>
+        <span class="location-tag">Isle of Palms</span>
+        <span class="location-tag">Sullivan's Island</span>
+        <span class="location-tag">North Charleston</span>
+        <span class="location-tag">West Ashley</span>
+        <span class="location-tag">James Island</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="book">
+    <div class="container">
+      <h2>Ready to Make the Bride's Night Legendary?</h2>
+      <p>Weekends in Charleston book up fast. Lock in your date before it's gone.</p>
+      <a href="tel:+18431234567" class="btn-white">Call to Book Now</a>
+      <p class="price-note">Rates starting at $200 · Available 7 days a week</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© 2025 <a href="https://charlestonstrippers101.com">Michael At Your Place Charleston</a> · Bachelorette Party Entertainer Charleston SC</p>
+      <p style="margin-top:0.4rem;">Serving Charleston · Mount Pleasant · Folly Beach · Isle of Palms · Sullivan's Island</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
